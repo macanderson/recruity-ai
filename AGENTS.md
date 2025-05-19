@@ -1,9 +1,3 @@
-[![Secure User Authentication with Next.js, NextAuth.js, and AWS Cognito](https://tse1.mm.bing.net/th?id=OIP.Ug67clLKulkk5VYeiP-CDAHaG_&pid=Api)](https://eduard.schwarzkopf.center/secure-user-authentication-with-next-js-nextauth-js-and-aws-cognito/)
-
-Here's the updated `AGENTS.md` file incorporating the latest architectural and implementation details:
-
----
-
 # AGENTS.md
 
 ## Monorepo Overview
