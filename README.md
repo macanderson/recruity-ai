@@ -1,4 +1,7 @@
-# AGENTS.md
+# ScoutAI - AI Recruiting Agent
+## The AI recruiting agent for software engineers.
+
+ScoutAI is an AI-powered digital recruiter built to help tech recruiting agencies scale placements, starting with software engineering talent. Acting as a virtual sourcer and screener, it automates the most time-consuming parts of a recruiter’s workflow—finding, qualifying, and engaging high-quality candidates—so recruiters can focus on closing.
 
 ## Monorepo Overview
 
