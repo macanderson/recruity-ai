@@ -14,11 +14,12 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `tasks`: a python redis queue package using APScheduler for scheduled tasks.
+- `api`: a python FastAPI package.
+- `@repo/prisma`: a prisma package for managing the database schema.
+- `@repo/ui-components`: a component library shared by all frontend applications that includes shadcn ui components built on tailwindcss@latest (v4)
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Utilities
 
