@@ -1,6 +1,7 @@
 # UI Components
 
-Shared React components built with the latest shadcn/ui patterns.
+Shared React components using the latest `shadcn/ui` patterns and Radix primitives.
+
 
 ## Development
 

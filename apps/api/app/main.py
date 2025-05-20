@@ -1,17 +1,13 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 
-from .routes.v1.hello import router as v1_router
+from .config import get_settings
+from .middleware import tenant_middleware
+from .routers import health
 
-app = FastAPI(title="Recruity AI API")
+settings = get_settings()
 
-@app.middleware("http")
-async def tenant_middleware(request: Request, call_next):
-    tenant_id = request.headers.get("X-Tenant-ID")
-    request.state.tenant_id = tenant_id
-    response = await call_next(request)
-    if tenant_id:
-        response.headers["X-Tenant-ID"] = tenant_id
-    return response
+app = FastAPI(title=settings.api_title)
 
+app.middleware("http")(tenant_middleware)
+app.include_router(health.router)
 
-app.include_router(v1_router)
