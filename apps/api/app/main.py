@@ -10,4 +10,3 @@ app = FastAPI(title=settings.api_title)
 
 app.middleware("http")(tenant_middleware)
 app.include_router(health.router)
-
